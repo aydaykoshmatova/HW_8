@@ -1,0 +1,20 @@
+class Solution:
+
+   def plusOne(self, digits: list) -> list:
+
+      num = ""
+
+      for i in digits:
+         num += str(i)
+      num = int(num)
+      num += 1
+      num = str(num)
+      answer = []
+
+      for i in num:
+         answer.append(int(i))
+      return answer
+
+arr = [1, 2, 3]
+x = Solution()
+print(x.plusOne(arr))
